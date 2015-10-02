@@ -38,8 +38,6 @@ def score(dice)
   index = 0
   sorted = dice.sort
   for i in sorted
-    puts 'beg index',index
-    puts 'beg total',total
     if index + 2 <= sorted.length
       if sorted[index] == 1 && sorted[index] == sorted[index+2]
         total += 1000
